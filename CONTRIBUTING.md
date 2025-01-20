@@ -19,7 +19,7 @@ Follow these steps to contribute code:
 
 2. **Clone Your Fork**  
    ```bash
-   git clone https://github.com/yourusername/webonitor.git
+   git clone https://github.com/aslamvrtly/webonitor.git
    cd webonitor
    ```  
 
