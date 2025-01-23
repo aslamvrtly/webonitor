@@ -31,7 +31,7 @@
           Webonitor provides everything you need to keep your website in check
         </p>
         <div class="row justify-content-center">
-          <div class="col-6 mb-3">
+          <div class="col-12 col-md-6 mb-3">
             <div class="feature-card" data-aos="zoom-in">
               <div class="row">
                 <div class="col-md-8">
@@ -45,23 +45,23 @@
                     if needed.
                   </p>
                 </div>
-                <div class="col-md-4 h-100">
-                  <div class="icon">
+                <div class="col-md-4 h-md-100">
+                  <div class="icon mt-3 mt-md-0">
                     <i class="bi bi-speedometer2"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-6 mb-3">
+          <div class="col-12 col-md-6 mb-3">
             <div class="feature-card" data-aos="zoom-in">
               <div class="row">
-                <div class="col-md-4 h-100">
-                  <div class="icon">
+                <div class="col-md-4 h-md-100">
+                  <div class="icon mb-3 mb-md-0">
                     <i class="bi bi-globe2"></i>
                   </div>
                 </div>
-                <div class="col-md-8">
+                <div class="col-12 col-md-8">
                   <p class="heading">
                     <i class="bi bi-2-circle-fill me-1"></i> Domain Expiry
                   </p>
@@ -74,7 +74,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6 mb-3 mb-md-0">
             <div class="feature-card" data-aos="zoom-in">
               <div class="row">
                 <div class="col-md-8">
@@ -89,19 +89,19 @@
                     data.
                   </p>
                 </div>
-                <div class="col-md-4 h-100">
-                  <div class="icon">
+                <div class="col-md-4 h-md-100">
+                  <div class="icon mt-3 mt-md-0">
                     <i class="bi bi-shield-check"></i>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-12 col-md-6">
             <div class="feature-card" data-aos="zoom-in">
               <div class="row">
-                <div class="col-md-4 h-100">
-                  <div class="icon">
+                <div class="col-md-4 h-md-100">
+                  <div class="icon mb-3 mb-md-0">
                     <i class="bi bi-list-ul"></i>
                   </div>
                 </div>

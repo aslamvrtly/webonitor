@@ -331,3 +331,70 @@ body {
   --bs-table-bg: #242424!important;
   --bs-table-striped-bg: #2C2C2C!important;
 }
+
+@media only screen and (max-width: 700px){
+  #banner img{
+    width: 200px!important;
+  }
+
+  #banner h1{
+    font-size: 27px;
+    line-height: normal;
+  }
+
+  #banner p{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .search-bar{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-bar input{
+    height: 50px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .search-bar button{
+    height: 50px;
+    width: 100%;
+  }
+
+  #features h1.section-heading{
+    font-size: 18px;
+  }
+
+  #features p.section-content{
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .feature-card .icon{
+    height: autod;
+  }
+
+  .support-card h6{
+    font-size: 35px;
+  }
+
+  .support-card p{
+    width: 100%;
+  }
+
+  .support-card a{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  #features { 
+    padding-block: 60px;
+  }
+
+  #result .main-heading{
+    font-size: 50px;
+    line-height: normal;
+  }
+}
