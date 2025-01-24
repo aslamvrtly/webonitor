@@ -58,7 +58,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-block: 40px;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 .search-bar button {
@@ -94,6 +96,18 @@ body {
 
 .search-bar input::placeholder {
   color: #fff;
+}
+
+
+.confirm{
+  font-size: 16px!important;
+  margin-bottom: 20px;
+  width: 100%!important;
+}
+
+.confirm a{
+  text-decoration: none;
+  color: #7a00c1;
 }
 
 .gradient {
@@ -332,6 +346,32 @@ body {
   --bs-table-striped-bg: #2C2C2C!important;
 }
 
+#privacy{
+  margin-top: 100px;
+  padding-inline: 200px;
+}
+
+#privacy h2{
+  background-color: #7a00c1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  padding-block: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#privacy h3{
+  font-size: 17px;
+  color: #a1a5bd;
+}
+
+#privacy p, #privacy li{
+  font-size: 14px;
+  text-align: justify;
+  color: #a1a5bd;
+}
+
 @media only screen and (max-width: 700px){
   #banner img{
     width: 200px!important;
@@ -396,5 +436,14 @@ body {
   #result .main-heading{
     font-size: 50px;
     line-height: normal;
+  }
+  
+  .confirm{
+    font-size: 11px!important;
+    width: 70%!important;
+  }
+
+  #privacy{
+    padding-inline: 20px;
   }
 }
