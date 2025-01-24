@@ -135,6 +135,7 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
       </div>
     </section>
 
+    <?php include('assets/contents/footer.php'); ?>
     <?php include('assets/contents/scripts.php'); ?>
     <script>
         $(document).ready(function() {

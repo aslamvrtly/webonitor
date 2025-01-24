@@ -55,6 +55,7 @@
     </section>
 
 
+    <?php include('assets/contents/footer.php'); ?>
     <?php include('assets/contents/scripts.php'); ?>
   </body>
 </html>
