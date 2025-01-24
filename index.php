@@ -16,7 +16,7 @@
               placeholder="Enter Your Website URL! (www.example.com)" required />
             <button type="submit" class="">Check Now</button>
           </form>
-          <p class="confirm">By using our website, you are agree to our <a href="privacy-policy" target="_blank">Privacy Policy</a> and <a href="terms-and-conditions" target="_blank">Terms & Conditions</a></p>
+          <p class="confirm">By using our website, you are agree to our <a href="privacy-policy.php" target="_blank">Privacy Policy</a> and <a href="terms-and-conditions.php" target="_blank">Terms & Conditions</a></p>
         <h1>Monitor Your Website Instantly</h1>
         <p>
           Check your website's status, domain details, SSL information, and DNS
