@@ -33,7 +33,7 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
                     <p class="title">Website Status</p>
                     <div class="divider w-100"></div>
                     <div class="status-div d-none">
-                        <img src="" class="img-fluid" width="200">
+                        <img src="" class="img-fluid" width="170">
                         <div>
                             <p class="status"></p>
                         </div>
@@ -41,9 +41,9 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
                     <img src="assets/img/hourglass.gif" class="img-fluid status-loader" width="140">
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4">
 
-                <div class="result-card">
+                <div class="result-card mb-3">
                     <div>
                         <p class="title">Domain Information</p>
                         <div class="divider"></div>
@@ -64,7 +64,17 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
                         <img src="assets/img/loading.gif" class="img-fluid domain-loader" width="140">
                     </div>
                 </div>
-                <div class="result-card mb-3">
+                <div class="result-card">
+                    <p class="title">Nameservers</p>
+                    <div class="divider w-100"></div>
+                    <div class="ns-div d-none">
+                        <ul id="ns"></ul>
+                    </div>
+                    <img src="assets/img/loading.gif" class="img-fluid ns-loader" width="140">
+                </div>
+            </div>
+            <div class="col-md-4">
+            <div class="result-card mb-3">
                     <div>
                         <p class="title">SSL Information</p>
                         <div class="divider"></div>
@@ -226,6 +236,7 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
                 },
                 success: function (response) {
                     let data = JSON.parse(response)
+                    let ns = data.nameserver;
                     if(data.status == 'success'){
                         let domain_expiry = new Date(data.expiry * 1000);
                         let now = new Date();
@@ -245,6 +256,12 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
                         $(".domain-div #domain_expiry").text(formattedExpiry);
                         $(".domain-div #domain_remaining").text(remaining + " Days");
                         $('.domain-loader').addClass("d-none");
+
+                        $('.ns-div').removeClass("d-none");
+                        ns.forEach(element => {
+                            $("#ns").append(`<li>${element}</li>`);
+                        });
+                        $('.ns-loader').addClass("d-none");
                     }else{
                         $('.domain-div').removeClass("d-none");
                         $(".domain-div #domain_expiry").text("Nil");

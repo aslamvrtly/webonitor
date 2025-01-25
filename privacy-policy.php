@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Webonitor</title>
+    <title>Privacy Policy | Webonitor</title>
     <?php include('assets/contents/head.php'); ?>
   </head>
   <body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Webonitor</title>
+    <title>Terms & Conditions | Webonitor</title>
     <?php include('assets/contents/head.php'); ?>
   </head>
   <body>

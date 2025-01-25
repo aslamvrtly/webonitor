@@ -10,7 +10,7 @@ function checkDomainDetails($website){
         $details["expiry"] = strtotime($matches1[1]);
         }
         if(preg_match_all('/Name Server: (.+)/i', $output, $matches)){
-        $details["expiry"] = strtotime($matches1[1]);
+        $details["nameserver"] = $matches[1];
         }
         return $details;
     }else{
