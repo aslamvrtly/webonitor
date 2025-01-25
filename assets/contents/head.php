@@ -1,12 +1,10 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZY4X7C7TC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<?php
 
-  gtag('config', 'G-1ZY4X7C7TC');
-</script>
+if(file_exists('assets/contents/analytics.php')){
+    include('assets/contents/analytics.php');
+}
+
+?>
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
