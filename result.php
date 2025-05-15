@@ -26,7 +26,8 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
         <div class="row justify-content-center align-items-center">
             <div class="col-12 text-center z-index">
                 <h3 class="main-heading">Website Analysis</h3>
-                <p class="url">Website URL : <?php echo $website ?></h6>
+                <p class="url mb-2">Website URL : <?php echo $website ?></p>
+                <a href="/" class="btn btn-sm btn-theme mb-2">Check Another</a>
             </div>
             <div class="col-md-4">
                 <div class="result-card">
@@ -259,7 +260,9 @@ if(isset($_GET['website']) && $_GET['website'] != ''){
 
                         $('.ns-div').removeClass("d-none");
                         ns.forEach(element => {
-                            $("#ns").append(`<li>${element}</li>`);
+                            if($("#ns li").filter(function() { return $(this).text().trim().toLowerCase() === element.trim().toLowerCase(); }).length === 0){
+                                $("#ns").append(`<li>${element}</li>`);
+                            }
                         });
                         $('.ns-loader').addClass("d-none");
                     }else{

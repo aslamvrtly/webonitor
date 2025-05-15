@@ -472,3 +472,13 @@ footer p a{
     padding-inline: 20px;
   }
 }
+
+.btn-theme{
+  background-color: #7a00c1;
+  color: #fff;
+  border-color: #7a00c1;
+}
+
+.btn-theme:hover{
+  background-color: #7a00c1c8;
+}

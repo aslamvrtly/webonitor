@@ -29,4 +29,4 @@ if(file_exists('assets/contents/analytics.php')){
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.3.0/css/responsive.bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/style.css?v=1.6" />
+<link rel="stylesheet" href="assets/css/style.css?v=2" />
